@@ -15,6 +15,9 @@ export class UsersRepositoryService
   findById(id: number): Promise<IUser> {
     return this.findOneBy({ id }) as Promise<IUser>;
   }
+  findByEmail(email: string): Promise<IUser> {
+    return this.findOneBy({ email }) as Promise<IUser>;
+  }
   add(payload: DeepPartial<IUser>): Promise<IUser> {
     return this.save(payload) as Promise<IUser>;
   }
