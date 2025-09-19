@@ -1,6 +1,6 @@
 import { IProject } from './project.interface';
 import { IUser } from './user.interface';
-export class ITask {
+export interface ITask {
   id: number;
   name: string;
   status: 'pending' | 'completed';

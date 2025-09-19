@@ -1,6 +1,6 @@
 import { IProject } from './project.interface';
 import { ITask } from './task.interface';
-export class IUser {
+export interface IUser {
   id: number;
   firstName: string;
   lastName: string;
