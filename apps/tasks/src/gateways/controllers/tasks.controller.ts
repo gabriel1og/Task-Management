@@ -10,8 +10,8 @@ import {
 } from '@nestjs/common';
 import { CreateTaskService } from 'apps/tasks/src/domain/use-cases/create-task.service';
 import { GetAllTasksService } from 'apps/tasks/src/domain/use-cases/get-all-tasks.service';
-import { GetTaskByIdService } from '@project-manager-api/domain/use-cases/tasks/get-task-by-id.service';
-import { CreateTaskDto } from '../../../../../tasks/src/gateways/controllers/dtos/create-task.dto';
+import { CreateTaskDto } from './dtos/create-task.dto';
+import { GetTaskByIdService } from '../../domain/use-cases/get-task-by-id.service';
 
 @Controller('tasks')
 export class TasksController {
