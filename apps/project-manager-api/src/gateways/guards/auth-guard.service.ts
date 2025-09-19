@@ -8,7 +8,7 @@ import { Reflector } from '@nestjs/core';
 import { JwtService } from '@nestjs/jwt';
 import { SetMetadata } from '@nestjs/common';
 import { Request } from 'express';
-import { jwtConstants } from 'src/infrastructure/auth/constants';
+import { jwtConstants } from '@project-manager-api/infrastructure/auth/constants';
 
 export const IS_PUBLIC_KEY = 'isPublic';
 

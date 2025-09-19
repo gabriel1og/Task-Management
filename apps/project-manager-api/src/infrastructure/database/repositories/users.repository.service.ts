@@ -1,7 +1,7 @@
 import { Injectable } from '@nestjs/common';
 import { UserEntity } from '../entities/user.entity';
 import { DataSource, DeepPartial, Repository } from 'typeorm';
-import { IUser } from 'src/domain/interfaces/user.interface';
+import { IUser } from '@project-manager-api/domain/interfaces/user.interface';
 import { IUsersRepository } from './users-repository.interface';
 
 @Injectable()

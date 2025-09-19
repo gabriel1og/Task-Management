@@ -1,5 +1,5 @@
 import { DeepPartial } from 'typeorm';
-import { IProject } from 'src/domain/interfaces/project.interface';
+import { IProject } from '@project-manager-api/domain/interfaces/project.interface';
 
 export interface IProjectsRepository {
   findAll(userId: number): Promise<IProject[]>;

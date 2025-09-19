@@ -1,5 +1,5 @@
 import { DeepPartial } from 'typeorm';
-import { ITask } from 'src/domain/interfaces/task.interface';
+import { ITask } from '@project-manager-api/domain/interfaces/task.interface';
 
 export interface ITasksRepository {
   findAll(userId: number): Promise<ITask[]>;
