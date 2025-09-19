@@ -22,7 +22,15 @@
     "strictBindCallApply": false,
     "noFallthroughCasesInSwitch": false,
     "paths": {
-      "@project-manager-api/*": ["apps/project-manager-api/src/*"],
+      "@app/common": [
+        "libs/common/src"
+      ],
+      "@app/common/*": [
+        "libs/common/src/*"
+      ],
+      "@project-manager-api/*": [
+        "apps/project-manager-api/src/*"
+      ]
     }
   }
 }
