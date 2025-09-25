@@ -20,7 +20,7 @@ export class TasksController {
   async findAll(@Req() request) {
     try {
       const loggedUser = request.user;
-      console.log('Disparando mensagem para Tasks');
+      console.log('Disparando mensagem para Tasks - Gabriel Gomide');
       return this.redisClient.send(
         { cmd: 'get_tasks' },
         { userId: loggedUser.sub },

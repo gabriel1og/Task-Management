@@ -19,7 +19,7 @@ export class TasksController {
   @MessagePattern({ cmd: 'get_tasks' })
   async findAll(@Payload() data: { userId: number }) {
     try {
-      console.log('recebendo mensagens em task');
+      console.log('recebendo mensagens em task - Gabriel Gomide');
       return await this.getAllTasksUseCase.execute({ userId: data.userId });
     } catch (error) {
       throw new NotFoundException(error.message);
